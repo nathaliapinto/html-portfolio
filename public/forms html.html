@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        <p>
+            <label for="color">Choose color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        </p>
+        <label for="number">Enter number:</label>
+        <input id="number" type="number" placeholder="number" name="num" min="1" max="1000" value="0" step="10">
+
+        <p>
+            <label for="date">Enter date:</label>
+            <input id="date" type="date">
+        </p>
+
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h3>Search Youtube</h1>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <button>Search YouTube!</button>
+
+        </form>
+        <h2>More inputs</h2>
+        <form action="/felines">
+            <input type="checkbox" name="agree_amazing" id="agree">
+            <label for="agree"> I agree cats are amazing</label>
+            <br>
+            <input type="checkbox" name="agree_magical" id="magical">
+            <label for="magical"> I have no doubt cats are magical creatures</label>
+            <button>Submit!</button>
+            <p>
+                <label for="c">C</label>
+                <input type="radio" name="cat" id="C" value="C">
+                <br>
+                <label for="a">A</label>
+                <input type="radio" name="cat" id="A" value="A">
+                <br>
+                <label for="t">T</label>
+                <input type="radio" name="cat" id="T" value="T">
+
+                <button>Submit</button>
+            </p>
+            <p>
+
+                <label for="names">Please, select a name:</label>
+                <select name="names" id="names">
+                    <option value="">-- Please, select one option --</option>
+                    <option value="Pikku Myy">Pikku Myy</option>
+                    <option value="Niikuneiti">Niiskuneiti</option>
+                    <option value="Nuuskamuikkunen">Nuuskamuikkunen</option>
+                    <option value="Taikuri">Taikuri</option>
+                </select>
+                <button>Submit</button>
+            </p>
+
+            <p>
+                <label for="cutness">How cute a cat is?</label>
+                <input type="range" name="cutness_level" id="cutness" value="666" min="100" max="666">
+            </p>
+
+            <button>Submit</button>
+            </p>
+            <p>
+                <label for="amazingness">Any comments on cats amazingness?</label>
+                <br>
+                <textarea name="amazingness" id="amazingness" rows="5" cols="30" placeholder="Type here"></textarea>
+
+            </p>
+
+            <br>
+            <h2>Validation Demo</h2>
+            <form action="">
+                <p>
+                    <label for="first">Enter First Name</label>
+                    <input type="text" name="first" id="first" required>
+                </p>
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" required>
+                    <button>Submit</button>
+
+            </form>
+
+            </p>
+
+        </form>
+
+
+</body>
+
+</html>
